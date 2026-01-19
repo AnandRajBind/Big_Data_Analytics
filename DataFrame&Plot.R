@@ -23,7 +23,6 @@ Data_Frame <- data.frame(
 addnew_df <- rbind(Data_Frame, c("workout", 120, 30))
 addnew_df
 
-
 # Add column
 addnew_col <- cbind(Data_Frame, Steps = c(120, 300, 400))
 addnew_col
@@ -52,3 +51,5 @@ plot(1,10)
 plot(c(1,5), c(2,6))
 plot(c(1,2,3,4,5,6), c(2,3,6,9,12,14))
 x <- c(1,2,3,4,5)
+
+

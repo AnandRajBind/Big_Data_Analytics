@@ -14,7 +14,7 @@ text1 <- "Hi, this is India."
 paste(text1, "This is forever green.")
 
 text2 <- "Anand"
-text3 <- "Seth"
+text3 <- "Raj"
 paste(text2, text3)
 
 #adding numbers
@@ -23,33 +23,34 @@ num2 <- 20
 num1 + num2
 
 
-# Data Types-
+# Data Structure in R Programming-
 # vector
 # lists
 # matrix
 # arrays
 # data_frame
 
-# vector -> list of commands but same type
+# vector -> Same data type ke elements
 fruits <- c("banana", "guava", "orange", "apple")
 fruits
 
-# List creation
-lst <- list("keyboard", "mouse", "mice", "pendrive", "cpu")
+# List creation- Different data types ek saath
+lst <- list("keyboard", "mouse", "mice", "pendrive", "cpu",4,2,5)
+
+print(lst)
 
 lst1 <- list("10, 20, 30", "banana", "guava")
-
 # to extract data --- position no.
 lst[1]
 
-print(lst)
+print(lst1)
 
 # change -----
 lst[1] <- "Gamekeyboard"
 lst
 
 
-# Data Frame-
+# Data Frame-Table-like structure (columns can have different data types)
 Data_Frame <- data.frame(
   Diet = c("Boost", "Strength", "Power"),
   Pulse = c(100, 120, 150),
