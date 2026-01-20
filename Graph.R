@@ -42,5 +42,36 @@ pie(x,label=mylabel , main="Diets", col=colors)
 legend("bottomright", colors, fill = colors)
 
 
+#**********************************Car chart ****************************************
+state_name <-c("UP","Delhi", "Haryana", "Punjab")
+temperature <-c(10,20,30,40)
 
+barplot(temperature,names.arg = state_name, col = "red" , density = 20)
+barplot(temperature,names.arg = state_name, col = "red" , density = 20, width=c(1,2,3,4),horiz = TRUE)
+
+
+
+#******************************************************************************
+
+library(datasets)
+data(mtcars)
+head(mtcars)
+summary(mtcars)
+boxplot(mtcars$mpg, col = "orange")
+hist(mtcars$mpg, col = "green",breaks=45)
+
+#Bar Plotting
+
+barplot(table(mtcars$carb), col = "orange")
+
+#Box Plot
+#Two Dimensional Plotting
+boxplot(mpg~gear, data=mtcars, col='blue')
+
+#Histogram 
+hist(subset(mtcars,cyl==4) $mpg, col="green" )
+hist(subset(mtcars, cyl==8) $mpg, col = "green")
+
+#scatter plot
+with(mtcars,plot(mpg,qsec))
 
