@@ -33,7 +33,6 @@ addnew_col
 
 length(addnew_col)
 
-
 Data_Frame2 <- data.frame(
   Diet = c("Boost", "Strength", "Power"),
   Pulse = c(100, 120, 150),
