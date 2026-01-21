@@ -42,7 +42,7 @@ pie(x,label=mylabel , main="Diets", col=colors)
 legend("bottomright", colors, fill = colors)
 
 
-#**********************************Car chart ****************************************
+#**********************************Bar chart ****************************************
 state_name <-c("UP","Delhi", "Haryana", "Punjab")
 temperature <-c(10,20,30,40)
 
@@ -74,4 +74,6 @@ hist(subset(mtcars, cyl==8) $mpg, col = "green")
 
 #scatter plot
 with(mtcars,plot(mpg,qsec))
+
+
 
